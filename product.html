@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper cup 8 oz | oslopack</title>
+<meta name="description" content="Single-wall white cup for espresso, tea and cold drinks. PE-lined board from FSC-certified mills.">
+<link rel="icon" href="assets/img/oslopack-logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/drawer.css">
+<style>
+
+.crumb{align-items:center}
+.pdp{display:grid;grid-template-columns:640px 1fr;gap:56px;padding:28px 40px 0}
+.gal .main{position:relative;border-radius:var(--r);overflow:hidden;background:#EAE7DF;aspect-ratio:1/1}
+.gal .main img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;left:16px;top:16px;height:28px;padding:0 13px;border-radius:999px;font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;background:#F2C14E;color:#1B2A44}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.thumbs .th{aspect-ratio:1/1;border-radius:var(--r-s);overflow:hidden;background:#EAE7DF;border:2px solid transparent;cursor:pointer;padding:0}
+.thumbs .th.on{border-color:var(--ink)}
+.thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.bx .cat{color:var(--green);font-weight:600}
+.bx h1{font-size:44px;line-height:1.05;letter-spacing:-.035em;font-weight:700;margin-top:10px}
+.rate{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:13.5px;color:var(--mut);flex-wrap:wrap}
+.rate .st{color:#C98A1B;letter-spacing:2px;font-size:15px}
+.rate .sep{width:1px;height:14px;background:var(--line)}
+.lead{margin-top:18px;font-size:16px;color:#3B3F39;max-width:520px}
+.price{display:flex;align-items:baseline;gap:10px;margin-top:24px;white-space:nowrap;flex-wrap:wrap}
+.price .big{font-size:36px;font-weight:700;letter-spacing:-.03em}
+.price .u{color:var(--mut);font-size:15px}
+.price .was{color:#8E918A;text-decoration:line-through;font-size:15px}
+.price .save{background:#E8F0FB;color:var(--green);font-weight:600;font-size:12.5px;border-radius:999px;padding:3px 10px}
+.opt{margin-top:24px}
+.opt .lb{font-size:13px;font-weight:600;display:flex;justify-content:space-between}
+.opt .lb span{color:var(--mut);font-weight:500}
+.seg{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.seg button{height:44px;padding:0 18px;border-radius:12px;border:1.5px solid var(--line);background:#fff;display:inline-flex;align-items:center;font:500 14px 'Figtree',sans-serif;color:var(--ink);cursor:pointer}
+.seg button.on{border-color:var(--ink);font-weight:600;box-shadow:inset 0 0 0 .5px var(--ink)}
+.swatch{display:flex;gap:10px;margin-top:10px}
+.swatch i{width:32px;height:32px;border-radius:50%;border:2px solid #fff;outline:1.5px solid var(--line);display:block;cursor:pointer}
+.swatch i.on{outline:2px solid var(--ink)}
+.tiers{margin-top:26px;border:1px solid var(--line);border-radius:var(--r-s);overflow:hidden}
+.tiers .tr{display:grid;grid-template-columns:1.2fr 1fr 1fr;padding:12px 18px;font-size:14px;border-top:1px solid var(--line);align-items:center}
+.tiers .tr:first-child{border-top:0;background:var(--cream);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.tiers .tr.on{background:#EEF3FA;font-weight:600}
+.tiers .tr span:last-child{text-align:right}
+.buy{display:flex;gap:12px;margin-top:24px;align-items:center}
+.btn.big{height:52px;flex:1;font-size:15.5px}
+.btn.line{height:52px}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-top:24px;padding-top:22px;border-top:1px solid var(--line);font-size:13.5px;color:#3B3F39}
+.perks div{display:flex;gap:10px;align-items:flex-start}
+.perks svg{width:18px;height:18px;flex-shrink:0;margin-top:1px;color:var(--green)}
+.sec{padding:80px 40px 0}
+.tabs{display:flex;gap:32px;border-bottom:1px solid var(--line)}
+.tabs a{padding:0 0 16px;font-size:15.5px;font-weight:500;color:var(--mut);position:relative}
+.tabs a.on{color:var(--ink);font-weight:600}
+.tabs a.on:after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--ink)}
+.det{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:40px}
+.det h2{font-size:28px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.det p{margin-top:14px;color:#3B3F39;font-size:15.5px;max-width:540px}
+.feat{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feat .f{border:1px solid var(--line);border-radius:var(--r-s);padding:18px}
+.feat .f b{display:block;font-size:26px;letter-spacing:-.03em;font-weight:700}
+.feat .f span{font-size:13.5px;color:var(--mut)}
+.spec{border-top:2px solid var(--ink)}
+.spec .row{display:grid;grid-template-columns:200px 1fr;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.spec .row span:first-child{color:var(--mut)}
+.spec .row span:last-child{font-weight:500}
+.dl{margin-top:20px;display:flex;gap:20px;font-weight:600;font-size:14px}
+.bc{margin:96px 40px 0;border-radius:var(--r);background:var(--green);color:#fff;display:grid;grid-template-columns:1fr 320px;gap:40px;padding:44px 48px;align-items:center}
+.bc h3{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1.08;max-width:520px}
+.bc p{margin-top:12px;color:#D3E1F4;font-size:15.5px;max-width:460px}
+.bc .cta{display:flex;gap:12px;margin-top:24px}
+.bc .im{border-radius:var(--r-s);overflow:hidden;aspect-ratio:4/3;background:#EAE7DF}
+.bc .im img{width:100%;height:100%;object-fit:cover;display:block}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px}
+.sh h2{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.sh a{font-weight:600;font-size:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.pc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column}
+.pc .im{position:relative;border-radius:var(--r-s);overflow:hidden;aspect-ratio:4/3;background:#EAE7DF}
+.pc .im img{width:100%;height:100%;object-fit:cover;display:block}
+.pc .bd{padding:16px 6px 6px}
+.pc h3{font-size:16.5px;font-weight:600;letter-spacing:-.01em}
+.pc .meta{font-size:13px;color:var(--mut);margin-top:2px}
+.pc .ft{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:14px;border-top:1px solid var(--line)}
+.pc .pr{font-size:15px;font-weight:700}.pc .pr span{font-weight:500;color:var(--mut);font-size:13px}
+.qb{height:36px;padding:0 14px;border-radius:999px;background:var(--green);color:#fff;font:600 13px 'Figtree',sans-serif;display:inline-flex;align-items:center;border:0;cursor:pointer}
+.qb.in{background:#E8F0FB;color:#0F3566;box-shadow:inset 0 0 0 1.5px var(--green)}
+@media (max-width:1100px){.pdp,.det,.bc{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.bx h1{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap"><span class="l">+974 7018 8064 · sales@oslopack.com</span><span class="c">Spring deals: up to 40% off selected cartons →</span><span class="r l">EN · العربية</span></div></div>
+<div class="info"><div class="wrap"><span>Free delivery on orders over 50 cartons · Pay by bank transfer or LPO</span><div class="lk"><a href="wishlist.html">Wishlist</a><a href="quotes-history.html">Quotes history</a><a href="reviews.html">Reviews</a><a href="contact.html">Help</a></div></div></div>
+<header><div class="wrap"><div class="hd"><a class="logo" href="index.html"><img src="assets/img/oslopack-logo.svg" alt="oslopack" style="display:block;height:30px;width:auto"></a>
+<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search cups, boxes, bags…</div>
+<a class="signin">Sign in</a><a class="btn dark" href="#" data-open-request>Request list <b data-request-count>0</b></a></div>
+<nav class="nav"><a href="index.html">All products</a><a href="product.html" class="on">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes</a><a href="index.html#best-sellers">Bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a>Industries</a><a href="request-for-quote.html">Bulk deals</a><a href="blog.html">Blog</a></nav></div></header>
+<div class="crumb"><a href="index.html">Home</a><span>/</span><span>Cups &amp; lids</span><span>/</span><span>Paper cups</span><span>/</span><b>Paper cup 8 oz</b></div>
+<section class="pdp">
+<div class="gal"><div class="main"><img id="mainimg" src="assets/img/cup.jpg" alt="White paper cup 8 oz with lid"><span class="badge">Best seller</span></div>
+<div class="thumbs"><button class="th on" data-src="cup.jpg"><img src="assets/img/cup.jpg" alt="Cup front"></button><button class="th" data-src="hero.jpg"><img src="assets/img/hero.jpg" alt="Cups in use with bag and boxes"></button><button class="th" data-src="custom-bag.jpg"><img src="assets/img/custom-bag.jpg" alt="Matching kraft bag"></button><button class="th" data-src="box.jpg"><img src="assets/img/box.jpg" alt="Matching takeaway box"></button></div></div>
+<div class="bx"><div class="cat mono">Cups &amp; lids · Paper cups</div>
+<h1>Paper cup 8 oz</h1>
+<div class="rate"><span class="st">★★★★★</span><b style="color:var(--ink)">4.8</b><span>124 reviews</span><i class="sep"></i><span>SKU OP-CUP-008W</span><i class="sep"></i><span style="color:var(--green);font-weight:600">In stock · Doha</span></div>
+<p class="lead">Single-wall white cup for espresso, tea and cold drinks. PE-lined board from FSC-certified mills, with a clean surface that takes a one-colour print.</p>
+<div class="price"><span class="big">QAR 148</span><span class="u">/ carton of 1,000</span><span class="was">QAR 165</span><span class="save">Save 10%</span></div>
+<div class="opt"><div class="lb">Size <span>Size guide</span></div><div class="seg" data-group><button>4 oz</button><button class="on">8 oz</button><button>12 oz</button><button>16 oz</button></div></div>
+<div class="opt"><div class="lb">Colour <span id="colname">White</span></div><div class="swatch"><i class="on" data-n="White" style="background:#fff"></i><i data-n="Kraft" style="background:#B98F63"></i><i data-n="Navy" style="background:#0D2B52"></i></div></div>
+<div class="opt"><div class="lb">Matching lid <span>Add to request</span></div><div class="seg" data-group><button class="on">No lid</button><button>Flat lid +QAR 58</button><button>Sip lid +QAR 64</button></div></div>
+<div class="tiers"><div class="tr"><span>Cartons</span><span>Price / carton</span><span>Per cup</span></div><div class="tr on"><span>1 – 9</span><span>QAR 148</span><span>QAR 0.148</span></div><div class="tr"><span>10 – 49</span><span>QAR 139</span><span>QAR 0.139</span></div><div class="tr"><span>50+ · free delivery</span><span>QAR 129</span><span>QAR 0.129</span></div></div>
+<div class="buy"><button class="btn dark big" data-add="cup">Add to request</button></div>
+<div class="buy" style="margin-top:12px"><a class="btn line" style="flex:1" href="contact.html">Request free sample</a><a class="btn line" style="flex:1" href="request-for-quote.html">Print my logo on this</a></div>
+<div class="perks"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="11" rx="1"></rect><path d="M15 9h4l3 3v5h-7"></path><circle cx="6" cy="18" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>Delivered in 48 hours across Doha</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 10h18"></path></svg>Pay by bank transfer or LPO</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"></path><path d="m9 12 2 2 4-4"></path></svg>FSC® certified board</div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg>7-day replacement on damage</div></div>
+</div></section>
+<section class="sec"><div class="tabs"><a class="on">Details &amp; specs</a><a>Printing &amp; artwork</a><a href="shipping-policy.html">Delivery</a><a href="reviews.html">Reviews (124)</a></div>
+<div class="det"><div><h2>Made for the morning rush</h2>
+<p>A sturdy single-wall cup that holds heat without a sleeve for short drinks and stays crisp for cold ones. Rolled rim, leak-tested seam and a matte white finish that looks right in any café.</p>
+<div class="feat"><div class="f"><b>1,000</b><span>cups per carton, 10 sleeves of 100</span></div><div class="f"><b>≤ 90 °C</b><span>rated for hot drinks</span></div><div class="f"><b>FSC®</b><span>mixed-source board, certificate on request</span></div><div class="f"><b>48 h</b><span>delivery in Doha, from stock</span></div></div></div>
+<div><div class="spec">
+<div class="row"><span>Capacity</span><span>8 oz · 240 ml</span></div>
+<div class="row"><span>Top diameter</span><span>80 mm</span></div>
+<div class="row"><span>Height</span><span>92 mm</span></div>
+<div class="row"><span>Wall</span><span>Single wall, PE-lined</span></div>
+<div class="row"><span>Carton size</span><span>41 × 33 × 49 cm · 7.2 kg</span></div>
+<div class="row"><span>Lid fit</span><span>80 mm flat and sip lids</span></div>
+<div class="row"><span>Custom print</span><span>From 5 cartons · 1–3 colours</span></div>
+</div><div class="dl"><a>Spec sheet (PDF) ↓</a><a>FSC certificate ↓</a></div></div></div></section>
+<section class="bc"><div><div class="mono" style="color:#B8CDEB">Custom print</div><h3 style="margin-top:14px">Your logo on every cup, from 5 cartons.</h3><p>Send us your artwork and get a free digital proof within one working day. Production takes 7–10 days.</p><div class="cta"><a class="btn white" href="request-for-quote.html">Start customising</a><a class="btn ghost" href="contact.html">Talk to sales</a></div></div>
+<div class="im"><img src="assets/img/custom-bag.jpg" alt="Kraft paper bag ready for custom printing"></div></section>
+<section class="sec"><div class="sh"><h2>Pairs well with</h2><a href="index.html#best-sellers">View all cups &amp; lids →</a></div>
+<div class="grid4">
+<div class="pc"><div class="im"><img src="assets/img/cup.jpg" alt="Paper cup 12 oz"></div><div class="bd"><h3>Paper cup 12 oz</h3><div class="meta">1,000 pcs / carton</div><div class="ft"><div class="pr">QAR 172 <span>/ carton</span></div><a class="qb" href="request-for-quote.html">Request quote</a></div></div></div>
+<div class="pc"><div class="im"><img src="assets/img/cup.jpg" alt="Flat lid 80 mm"></div><div class="bd"><h3>Flat lid 80 mm</h3><div class="meta">1,000 pcs / carton</div><div class="ft"><div class="pr">QAR 58 <span>/ carton</span></div><a class="qb" href="request-for-quote.html">Request quote</a></div></div></div>
+<div class="pc"><div class="im"><img src="assets/img/bag.jpg" alt="Kraft paper bag, medium"></div><div class="bd"><h3>Kraft paper bag, medium</h3><div class="meta">250 pcs / carton</div><div class="ft"><div class="pr">QAR 96 <span>/ carton</span></div><button class="qb" data-add="bag">+ Add to request</button></div></div></div>
+<div class="pc"><div class="im"><img src="assets/img/box.jpg" alt="Kraft takeaway box"></div><div class="bd"><h3>Kraft takeaway box</h3><div class="meta">300 pcs / carton</div><div class="ft"><div class="pr">QAR 210 <span>/ carton</span></div><button class="qb" data-add="box">+ Add to request</button></div></div></div>
+</div></section>
+<script>
+document.querySelectorAll('[data-group]').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on')})});
+document.querySelectorAll('.swatch i').forEach(function(s){s.addEventListener('click',function(){document.querySelectorAll('.swatch i').forEach(function(x){x.classList.remove('on')});s.classList.add('on');document.getElementById('colname').textContent=s.dataset.n})});
+document.querySelectorAll('.thumbs .th').forEach(function(t){t.addEventListener('click',function(){document.querySelectorAll('.thumbs .th').forEach(function(x){x.classList.remove('on')});t.classList.add('on');document.getElementById('mainimg').src='assets/img/'+t.dataset.src})});
+</script>
+<footer><div class="ft1"><div><div class="mono">Newsletter</div><h4>Bulk deals and new eco ranges, once a month.</h4><div class="nl"><span>Business email address</span><span>→</span></div></div>
+<div class="cols"><div><h5>Shop</h5><a href="product.html">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes &amp; containers</a><a href="index.html#best-sellers">Paper bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a href="request-for-quote.html">Bulk deals</a></div>
+<div><h5>Industries</h5><a>Cafés</a><a>Restaurants</a><a>Hotels</a><a>Caterers</a><a>Bakeries</a></div>
+<div><h5>Company</h5><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="faqs.html">Certifications</a><a>Careers</a></div>
+<div><h5>Help</h5><a href="shipping-policy.html">Delivery areas</a><a href="request-for-quote.html">How quotes work</a><a href="faqs.html">Payment &amp; LPO</a><a href="refund-policy.html">Returns</a><a href="contact.html">Contact us</a></div></div></div>
+<div class="fb"><div><span>© 2026 oslopack</span><a href="terms.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping</a><a href="refund-policy.html">Refunds</a><a href="privacy-policy.html">Privacy Policy</a></div><div class="so"><a>Instagram</a><a>LinkedIn</a><a>Facebook</a></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/request-drawer.js"></script>
+</body>
+</html>

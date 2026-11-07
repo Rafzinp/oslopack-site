@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request for quote | oslopack</title>
+<meta name="description" content="Review your quote list, tell us where to deliver and we reply with a written quote the same working day.">
+<link rel="icon" href="assets/img/oslopack-logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/drawer.css">
+<style>
+.ph{padding:40px 40px 0}
+.ph h1{font-size:56px;line-height:1.03;font-weight:700;letter-spacing:-.035em;margin-top:14px}
+.ph p{margin-top:16px;font-size:17px;color:var(--mut);max-width:560px}
+.ph .mono{color:var(--green)}
+.ph p{max-width:600px}
+.rfq{display:grid;grid-template-columns:1fr 380px;gap:40px;padding:48px 40px 0;align-items:start}
+.box{border:1px solid var(--line);border-radius:var(--r);padding:32px;margin-bottom:24px}
+.box h2{font-size:22px;font-weight:700;letter-spacing:-.025em;display:flex;align-items:center;gap:12px}
+.box h2 .mono{background:var(--green);color:#fff;border-radius:999px;padding:4px 10px;letter-spacing:.08em}
+.it{display:grid;grid-template-columns:72px 1fr 130px 40px;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.it:first-of-type{margin-top:12px}
+.it img{width:72px;height:72px;border-radius:12px;object-fit:cover;display:block;background:#EAE7DF}
+.it b{font-size:16px;font-weight:600}.it span{display:block;font-size:13.5px;color:var(--mut)}
+.qty{display:flex;align-items:center;justify-content:space-between;height:44px;border:1.5px solid var(--line);border-radius:999px;padding:0 14px;font-weight:600}
+.qty i{font-style:normal;color:var(--mut);font-size:18px}
+.rm{color:var(--mut);font-size:20px;text-align:center}
+.add{display:inline-block;margin-top:18px;font-weight:600;font-size:14.5px;color:var(--green)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.fld label{display:block;font-size:13px;font-weight:600;margin-bottom:8px}
+.fld input,.fld select,.fld textarea{width:100%;height:50px;border:1.5px solid var(--line);border-radius:12px;padding:0 16px;font:400 14.5px 'Figtree',sans-serif;color:var(--ink);background:#fff}
+.fld textarea{height:110px;padding:14px 16px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.fld.full{grid-column:1/-1}
+.opts{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.opts a{height:42px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);display:inline-flex;align-items:center;font-size:14px;font-weight:500;cursor:pointer}
+.opts a.on{border-color:var(--ink);font-weight:600}
+.sum{position:sticky;top:20px;background:var(--cream);border-radius:var(--r);padding:30px;border:1px solid var(--line)}
+.sum h3{font-size:20px;font-weight:700;letter-spacing:-.02em}
+.sum .r{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.sum .r span:first-child{color:var(--mut)}
+.sum .tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:16px}
+.sum .tot b{font-size:30px;letter-spacing:-.03em}
+.sum .tot span{font-size:13px;color:var(--mut)}
+.sum .btn{width:100%;margin-top:20px;height:54px;font-size:15.5px}
+.sum .fine{margin-top:14px;font-size:12.5px;color:var(--mut);text-align:center}
+.how{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px;color:#3B3F39}
+.how div{display:flex;gap:10px;margin-top:8px}
+.how .mono{color:var(--green)}@media (max-width:1100px){.ph{flex-direction:column;align-items:flex-start;gap:20px}.ph h1{font-size:40px}.pol,.faq,.ct,.rfq,.rv,.pdp,.det,.tbl .tr{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.toc,.sum{position:static}}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap"><span class="l">+974 7018 8064 · sales@oslopack.com</span><span class="c">Spring deals: up to 40% off selected cartons →</span><span class="r l">EN · العربية</span></div></div>
+<div class="info"><div class="wrap"><span>Free delivery on orders over 50 cartons · Pay by bank transfer or LPO</span><div class="lk"><a href="wishlist.html">Wishlist</a><a href="quotes-history.html">Quotes history</a><a href="reviews.html">Reviews</a><a href="contact.html">Help</a></div></div></div>
+<header><div class="wrap"><div class="hd"><a class="logo" href="index.html"><img src="assets/img/oslopack-logo.svg" alt="oslopack" style="display:block;height:30px;width:auto"></a>
+<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search cups, boxes, bags…</div>
+<a class="signin">Sign in</a><a class="btn dark" href="#" data-open-request>Request list <b data-request-count>0</b></a></div>
+<nav class="nav"><a href="index.html">All products</a><a href="product.html">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes</a><a href="index.html#best-sellers">Bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a>Industries</a><a href="request-for-quote.html">Bulk deals</a><a href="blog.html">Blog</a></nav></div></header>
+<div class="crumb"><a href="index.html">Home</a><span>/</span><b>Request for quote</b></div>
+<section class="ph"><div class="mono">Request for quote</div><h1>Get a price for your order.</h1><p>Review your quote list, tell us where to deliver and we'll reply with a written quote the same working day.</p></section>
+<section class="rfq"><div>
+<div class="box"><h2><span class="mono">1</span>Your quote list</h2>
+<div class="it"><img src="assets/img/cup.jpg" alt="Paper cup 8 oz"><div><b>Paper cup 8 oz</b><span>1,000 pcs / carton · White · No lid</span></div><div class="qty"><i>−</i>50<i>+</i></div><div class="rm">×</div></div>
+<div class="it"><img src="assets/img/box.jpg" alt="Kraft takeaway box"><div><b>Kraft takeaway box</b><span>300 pcs / carton · With window</span></div><div class="qty"><i>−</i>20<i>+</i></div><div class="rm">×</div></div>
+<div class="it"><img src="assets/img/bag.jpg" alt="Kraft paper bag"><div><b>Kraft paper bag, medium</b><span>250 pcs / carton · Plain</span></div><div class="qty"><i>−</i>10<i>+</i></div><div class="rm">×</div></div>
+<a class="add" href="index.html#best-sellers">+ Add more products</a></div>
+<div class="box"><h2><span class="mono">2</span>Your details</h2>
+<div class="g2"><div class="fld"><label for="a1">Full name</label><input id="a1" value="Layla Hassan"></div><div class="fld"><label for="a2">Business name</label><input id="a2" value="Brew Lab Café"></div><div class="fld"><label for="a3">Work email</label><input id="a3" type="email" value="layla@brewlab.qa"></div><div class="fld"><label for="a4">Phone</label><input id="a4" type="tel" value="+974 5500 1234"></div></div></div>
+<div class="box"><h2><span class="mono">3</span>Delivery &amp; extras</h2>
+<div class="g2"><div class="fld"><label for="a5">Delivery area</label><select id="a5"><option>Doha — West Bay</option><option>Doha — The Pearl</option><option>Lusail</option><option>Al Wakra</option><option>Al Khor</option></select></div><div class="fld"><label for="a6">Needed by</label><input id="a6" type="date" value="2026-11-18"></div>
+<div class="fld full"><label>Add-ons</label><div class="opts"><a class="on">Custom logo print</a><a>Contract pricing</a><a>Free samples</a></div></div>
+<div class="fld full"><label for="a7">Notes</label><textarea id="a7" placeholder="Anything we should know, such as artwork, delivery slots or a standing order…"></textarea></div></div></div>
+</div>
+<aside class="sum"><h3>Quote summary</h3><div class="r" style="margin-top:12px"><span>Paper cup 8 oz × 50</span><b>QAR 6,450</b></div><div class="r"><span>Kraft takeaway box × 20</span><b>QAR 4,200</b></div><div class="r"><span>Kraft paper bag × 10</span><b>QAR 960</b></div><div class="r"><span>Delivery · 80 cartons</span><b style="color:var(--green)">Free</b></div>
+<div class="tot"><span>Estimated total</span><b>QAR 11,610</b></div>
+<a class="btn dark" href="thank-you.html">Submit request</a><div class="fine">Estimate only. Your written quote may include volume discounts.</div>
+<div class="how"><div class="mono">What happens next</div><div><b>1</b>We review within one working day</div><div><b>2</b>You get a written quote by email</div><div><b>3</b>Approve it and we deliver in 48 hours</div></div></aside></section>
+<script>document.querySelectorAll('.opts a').forEach(function(a){a.addEventListener('click',function(){a.classList.toggle('on')})});</script>
+<footer><div class="ft1"><div><div class="mono">Newsletter</div><h4>Bulk deals and new eco ranges, once a month.</h4><div class="nl"><span>Business email address</span><span>→</span></div></div>
+<div class="cols"><div><h5>Shop</h5><a href="product.html">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes &amp; containers</a><a href="index.html#best-sellers">Paper bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a href="request-for-quote.html">Bulk deals</a></div>
+<div><h5>Industries</h5><a>Cafés</a><a>Restaurants</a><a>Hotels</a><a>Caterers</a><a>Bakeries</a></div>
+<div><h5>Company</h5><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="faqs.html">Certifications</a><a>Careers</a></div>
+<div><h5>Help</h5><a href="shipping-policy.html">Delivery areas</a><a href="request-for-quote.html">How quotes work</a><a href="faqs.html">Payment &amp; LPO</a><a href="refund-policy.html">Returns</a><a href="contact.html">Contact us</a></div></div></div>
+<div class="fb"><div><span>© 2026 oslopack</span><a href="terms.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping</a><a href="refund-policy.html">Refunds</a><a href="privacy-policy.html">Privacy Policy</a></div><div class="so"><a>Instagram</a><a>LinkedIn</a><a>Facebook</a></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/request-drawer.js"></script>
+</body>
+</html>

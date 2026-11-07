@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | oslopack</title>
+<meta name="description" content="Practical guides for cafés, caterers and hotels in Qatar: packaging materials, regulations, costs and what actually works.">
+<link rel="icon" href="assets/img/oslopack-logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/drawer.css">
+<style>
+.bh{padding:56px 40px 0;display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.bh .mono{color:var(--mut)}
+.bh h1{font-size:60px;line-height:1.02;font-weight:700;letter-spacing:-.035em;margin-top:16px}
+.bh p{max-width:380px;color:var(--mut);font-size:16.5px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{height:36px;padding:0 16px;border-radius:999px;border:1px solid var(--line);display:inline-flex;align-items:center;font-size:13.5px;font-weight:500;color:var(--mut);background:#fff;cursor:pointer;font-family:inherit}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.fbar{display:flex;justify-content:space-between;align-items:center;padding:32px 40px 0}
+.fbar .ct{color:var(--mut);font-size:13.5px}
+.feat{display:grid;grid-template-columns:7fr 5fr;gap:24px;margin:28px 40px 0}
+.feat .ph{border-radius:var(--r);overflow:hidden;background:#EAE7DF;min-height:440px}
+.feat .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.feat .tx{background:var(--green);color:#fff;border-radius:var(--r);padding:48px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.feat .tx:after{content:'';position:absolute;right:-120px;bottom:-160px;width:380px;height:380px;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+.feat .tag{display:inline-flex;align-items:center;height:26px;padding:0 11px;border-radius:999px;background:#fff;color:var(--green-dk);font-size:12px;font-weight:600}
+.feat h2{font-size:38px;line-height:1.08;font-weight:700;letter-spacing:-.03em;margin-top:20px}
+.feat p{margin-top:16px;font-size:16px}
+.feat .by{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.feat .by span{font-size:13.5px}
+.sec{padding:80px 40px 0}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px}
+.sh h2{font-size:34px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.sh .sub{color:var(--mut);margin-top:6px;font-size:15px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.bp{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;transition:box-shadow .15s,transform .15s}
+.bp:hover{box-shadow:0 12px 32px rgba(14,27,49,.08);transform:translateY(-2px)}
+.bp .im{position:relative;border-radius:var(--r-s);overflow:hidden;aspect-ratio:3/2;background:#EAE7DF}
+.bp .im img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;left:10px;top:10px;height:26px;padding:0 11px;border-radius:999px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;background:#fff;color:var(--ink)}
+.bp .bd{padding:18px 8px 8px;display:flex;flex-direction:column;flex:1}
+.bp .mono{color:var(--mut)}
+.bp h3{font-size:21px;line-height:1.2;font-weight:700;letter-spacing:-.02em;margin-top:10px}
+.bp p{margin-top:10px;color:var(--mut);font-size:14.5px}
+.bp .ft{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:18px;font-size:13px;color:var(--mut)}
+.bp .ft b{color:var(--ink);font-weight:600}
+.bp .ft .rm{font-weight:600;color:var(--ink);font-size:14px}
+.cta{margin:80px 40px 0;background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.cta h3{font-size:30px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.cta p{margin-top:10px;color:var(--mut);max-width:460px}
+.cta .row{display:flex;gap:12px;align-items:center}
+@media (max-width:1100px){.bh,.fbar,.cta{grid-template-columns:1fr;flex-direction:column;align-items:flex-start}.feat,.grid3{grid-template-columns:1fr}.bh h1{font-size:44px}}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap"><span class="l">+974 7018 8064 · sales@oslopack.com</span><span class="c">Spring deals: up to 40% off selected cartons →</span><span class="r l">EN · العربية</span></div></div>
+<div class="info"><div class="wrap"><span>Free delivery on orders over 50 cartons · Pay by bank transfer or LPO</span><span>Help: +974 7018 8064 · EN / العربية</span></div></div>
+<header><div class="wrap">
+<div class="hd"><a class="logo" href="index.html"><img src="assets/img/oslopack-logo.svg" alt="oslopack" style="display:block;height:30px;width:auto"></a>
+<div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>Search cups, boxes, bags…</div>
+<a class="signin">Sign in</a><a class="btn dark" href="#" data-open-request>Request list <b data-request-count>0</b></a></div>
+<nav class="nav"><a href="index.html">All products</a><a href="product.html">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes</a><a href="index.html#best-sellers">Bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a>Industries</a><a href="request-for-quote.html">Bulk deals</a><a class="on" href="blog.html">Blog</a></nav>
+</div></header>
+<section class="bh"><div><div class="mono">The oslopack journal</div><h1>Packaging, explained.</h1></div>
+<p>Practical guides for cafés, caterers and hotels in Qatar: materials, regulations, costs and what actually works.</p></section>
+<div class="fbar"><div class="chips"><button class="chip on">All articles</button><button class="chip">Sustainability</button><button class="chip">Guides</button><button class="chip">Café owners</button><button class="chip">Custom printing</button><button class="chip">Regulations</button></div><span class="ct">24 articles</span></div>
+<a class="feat" href="blog-article.html"><div class="ph"><img src="assets/img/hero.jpg" alt="Kraft paper bag, takeaway cups and food boxes on a blue background"></div>
+<div class="tx"><div><span class="tag">Featured · Sustainability</span><h2>Compostable vs recyclable cups: what your café should actually choose</h2><p>Most "eco" cups end up in the same bin. Here is how to pick the right material for Qatar's waste system, and what it costs per carton.</p></div>
+<div class="by"><span>Layla Haddad · 9 min read</span><span>Nov 3, 2026</span></div></div></a>
+<section class="sec"><div class="sh"><div><h2>Latest articles</h2><div class="sub">New guides every week</div></div></div>
+<div class="grid3">
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/cup.jpg" alt="White paper cup with lid"><span class="badge">Guides</span></div><div class="bd"><div class="mono">Oct 28, 2026</div><h3>How many cups does a café really need per month?</h3><p>A simple formula based on seats, opening hours and takeaway share, with benchmarks from 40 Doha cafés.</p><div class="ft"><b>Omar Nasser · 6 min</b><span class="rm">Read →</span></div></div></a>
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/custom-bag.jpg" alt="Kraft paper bag ready for custom printing"><span class="badge">Custom printing</span></div><div class="bd"><div class="mono">Oct 21, 2026</div><h3>Custom printed bags: artwork, minimums and lead times</h3><p>Everything to prepare before you send your logo to print, from file formats to Pantone matching.</p><div class="ft"><b>Layla Haddad · 7 min</b><span class="rm">Read →</span></div></div></a>
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/box.jpg" alt="Kraft takeaway box with window"><span class="badge">Café owners</span></div><div class="bd"><div class="mono">Oct 14, 2026</div><h3>Takeaway boxes that keep food hot and crisp</h3><p>Window, vented or sealed? We tested five box styles on fries, shawarma and pastries.</p><div class="ft"><b>Omar Nasser · 5 min</b><span class="rm">Read →</span></div></div></a>
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/bagasse.jpg" alt="Bagasse container"><span class="badge">Sustainability</span></div><div class="bd"><div class="mono">Oct 7, 2026</div><h3>Is bagasse packaging worth the price?</h3><p>Sugarcane containers cost more per carton. We break down when the premium pays back.</p><div class="ft"><b>Sara Al-Kuwari · 8 min</b><span class="rm">Read →</span></div></div></a>
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/bag.jpg" alt="Kraft paper bag"><span class="badge">Regulations</span></div><div class="bd"><div class="mono">Sep 30, 2026</div><h3>Qatar's single-use plastic rules: a plain-English summary</h3><p>What changed for food businesses, what is still allowed and how to switch without a rush.</p><div class="ft"><b>Sara Al-Kuwari · 6 min</b><span class="rm">Read →</span></div></div></a>
+<a class="bp" href="blog-article.html"><div class="im"><img src="assets/img/cup.jpg" alt="Paper cups"><span class="badge">Guides</span></div><div class="bd"><div class="mono">Sep 23, 2026</div><h3>Cup sizes explained: 4 oz to 16 oz and what to serve in each</h3><p>A quick reference chart for espresso, flat white, karak and iced drinks.</p><div class="ft"><b>Omar Nasser · 4 min</b><span class="rm">Read →</span></div></div></a>
+</div>
+<div style="display:flex;justify-content:center;margin-top:40px"><a class="btn line">Load more articles</a></div></section>
+<section class="cta"><div><h3>Not sure which packaging fits your menu?</h3><p>Tell us what you serve and we will recommend sizes, materials and quantities, with a quote within one working day.</p></div><div class="row"><a class="btn line" href="contact.html">Talk to sales</a><a class="btn dark" href="request-for-quote.html">Get a bulk quote</a></div></section>
+<footer><div class="ft1"><div><div class="mono">Newsletter</div><h4>Bulk deals and new eco ranges, once a month.</h4><div class="nl"><span>Business email address</span><span>→</span></div></div>
+<div class="cols">
+<div><h5>Shop</h5><a href="product.html">Cups &amp; lids</a><a href="index.html#best-sellers">Boxes &amp; containers</a><a href="index.html#best-sellers">Paper bags</a><a href="index.html#categories">Cutlery &amp; napkins</a><a href="request-for-quote.html">Bulk deals</a></div>
+<div><h5>Industries</h5><a>Cafés</a><a>Restaurants</a><a>Hotels</a><a>Caterers</a><a>Bakeries</a></div>
+<div><h5>Company</h5><a href="about.html">About us</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="faqs.html">Certifications</a><a>Careers</a></div>
+<div><h5>Help</h5><a href="shipping-policy.html">Delivery areas</a><a href="request-for-quote.html">How quotes work</a><a href="faqs.html">Payment &amp; LPO</a><a href="refund-policy.html">Returns</a><a href="contact.html">Contact us</a></div>
+</div></div>
+<div class="fb"><div><span>© 2026 oslopack</span><a href="terms.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping</a><a href="refund-policy.html">Refunds</a><a href="privacy-policy.html">Privacy Policy</a></div><div class="so"><a>Instagram</a><a>LinkedIn</a><a>Facebook</a></div></div></footer>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/request-drawer.js"></script>
+</body>
+</html>
